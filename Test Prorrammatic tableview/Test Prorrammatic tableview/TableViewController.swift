@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class TableViewController: UIViewController {
 
     let tableView: UITableView = {
         let tableView = UITableView()
@@ -26,7 +26,7 @@ class RootViewController: UIViewController {
 
 }
 
-extension RootViewController: UITableViewDataSource {
+extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "hello"

@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
-        window?.rootViewController = RootViewController()
+        window?.rootViewController = TableViewController()
+
+        
+//        Programmatic Table View Controller
+//        window?.rootViewController = TableViewController()
+
+//        Just starts a ViewController with label and a  bunch of buttons
+//        window?.rootViewController = SimpleStartViewController()
         window?.makeKeyAndVisible()
         return true
     }
