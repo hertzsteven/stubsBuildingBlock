@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class TableViewController: UIViewController {
+class TableViewControllerProtocolClosure: UIViewController {
     let tableView = UITableView()
     
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ class TableViewController: UIViewController {
 
 
 
-extension TableViewController: UITableViewDataSource {
+extension TableViewControllerProtocolClosure: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cll", for: indexPath) as! TableViewCell

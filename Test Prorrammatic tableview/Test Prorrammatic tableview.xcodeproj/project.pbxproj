@@ -15,6 +15,8 @@
 		46DD7B1827D63CB70053E88F /* SimpleStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B1727D63CB70053E88F /* SimpleStartViewController.swift */; };
 		46DD7B1B27D6708A0053E88F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B1A27D6708A0053E88F /* UIView+Ext.swift */; };
 		46DD7B1D27D6736D0053E88F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B1C27D6736D0053E88F /* TestViewController.swift */; };
+		46DD7B2127D6B9B40053E88F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B2027D6B9B40053E88F /* TableViewCell.swift */; };
+		46DD7B2327D6EBB80053E88F /* TableViewControllerProtocolClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B2227D6EBB80053E88F /* TableViewControllerProtocolClosure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		46DD7B1A27D6708A0053E88F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		46DD7B1C27D6736D0053E88F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		46DD7B1E27D6B1570053E88F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46DD7B2027D6B9B40053E88F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		46DD7B2227D6EBB80053E88F /* TableViewControllerProtocolClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerProtocolClosure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +64,9 @@
 		466BD8D927D4E9980030577A /* Test Prorrammatic tableview */ = {
 			isa = PBXGroup;
 			children = (
+				46DD7B2027D6B9B40053E88F /* TableViewCell.swift */,
 				46DD7B1E27D6B1570053E88F /* README.md */,
-				466BD8DC27D4E9980030577A /* TableViewController.swift */,
-				46DD7B1727D63CB70053E88F /* SimpleStartViewController.swift */,
-				46DD7B1C27D6736D0053E88F /* TestViewController.swift */,
+				46DD7B1F27D6B93E0053E88F /* ViewControllers */,
 				46DD7B1A27D6708A0053E88F /* UIView+Ext.swift */,
 				46DD7B1927D66DF50053E88F /* files */,
 			);
@@ -79,6 +82,17 @@
 				466BD8E027D4E9990030577A /* Assets.xcassets */,
 			);
 			name = files;
+			sourceTree = "<group>";
+		};
+		46DD7B1F27D6B93E0053E88F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				466BD8DC27D4E9980030577A /* TableViewController.swift */,
+				46DD7B1727D63CB70053E88F /* SimpleStartViewController.swift */,
+				46DD7B1C27D6736D0053E88F /* TestViewController.swift */,
+				46DD7B2227D6EBB80053E88F /* TableViewControllerProtocolClosure.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				466BD8DD27D4E9980030577A /* TableViewController.swift in Sources */,
+				46DD7B2327D6EBB80053E88F /* TableViewControllerProtocolClosure.swift in Sources */,
 				466BD8DB27D4E9980030577A /* AppDelegate.swift in Sources */,
 				46DD7B1B27D6708A0053E88F /* UIView+Ext.swift in Sources */,
 				46DD7B1827D63CB70053E88F /* SimpleStartViewController.swift in Sources */,
 				46DD7B1D27D6736D0053E88F /* TestViewController.swift in Sources */,
+				46DD7B2127D6B9B40053E88F /* TableViewCell.swift in Sources */,
 				466BD8DF27D4E9980030577A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
