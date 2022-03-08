@@ -1,13 +1,18 @@
-    //
-    //  StartViewController.swift
-    //  Test Prorrammatic tableview
-    //
-    //  Created by Steven Hertz on 3/8/22.
-    //
+//
+//  StartViewController.swift
+//  Test Prorrammatic tableview
+//
+//  Created by Steven Hertz on 3/8/22.
+//
+// a starter stube
+// - creates 2 buttons
+// - also a Label
+//
 
 import UIKit
 
 final class StartViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -15,14 +20,14 @@ final class StartViewController: UIViewController {
     
     private func setupView() {
         
-        
+        // 1. create a button
         let button1 = UIButton(configuration: UIButton.Configuration.filled(),
                                primaryAction: UIAction(title: "Hello From One") { action in
             print(action.title)
         }
         )
         
-        
+        // 2. create a label
         let label: UILabel = {
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -34,18 +39,19 @@ final class StartViewController: UIViewController {
             return label
         }()
         
-
+        // 3. create a second buttton
         let button2 = UIButton(configuration: UIButton.Configuration.filled(),
                                primaryAction: UIAction(title: "Hello From The second one") { action in
             print(action.title)
         }
         )
         
+        // 4. pass it to the stackView
         setupStackView(button1, label, button2)
         
     }
     
-    
+    // stackView gets created and get cofigured into the view
     fileprivate func setupStackView(_ views: UIView...) {
             // Instantiate the StackView
         let stackView: UIStackView = {
@@ -60,11 +66,9 @@ final class StartViewController: UIViewController {
         views.forEach { btn in
             stackView.addArrangedSubview(btn)
         }
-//        stackView.addArrangedSubview(button1)
-//        stackView.addArrangedSubview(button2)
-//
+
         view.addSubview(stackView)
-        stackView.centerOfsuperView()
+        stackView.centerOfsuperView() // using my helper extension on UIView
     }
 
 }
