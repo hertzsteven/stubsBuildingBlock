@@ -25,8 +25,9 @@ class TableViewControllerProtocolClosure: UIViewController {
     
     fileprivate func setUpView() {
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.rowHeight = 100
-        tableView.register(TableViewCell.self, forCellReuseIdentifier: "cll")
+        tableView.register(TableViewCellIndexClosure.self, forCellReuseIdentifier: "cll")
         
         
     }
@@ -39,11 +40,16 @@ class TableViewControllerProtocolClosure: UIViewController {
 
 
 
-extension TableViewControllerProtocolClosure: UITableViewDataSource {
+extension TableViewControllerProtocolClosure: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cll", for: indexPath) as! TableViewCell
-        cell.label.text = "hello mr row at \(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cll", for: indexPath) as! TableViewCellIndexClosure
+        cell.addSubview(cell.stackView)
+        cell.stackView.addArrangedSubview(cell.buttonProtocol)
+        cell.stackView.pinToSidesOfsuperView(spacingFrom: 0)
+        
+        // cell.label.text = "hello mr row at \(indexPath.row)"
+        // cell.buttonProtocol.addTarget(self, action: #selector(signInTapped), for: .primaryActionTriggered)
         return cell
     }
     
@@ -51,5 +57,11 @@ extension TableViewControllerProtocolClosure: UITableViewDataSource {
         7
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    @objc func signInTapped()  {
+        print("sign in")
+    }
 }
 
