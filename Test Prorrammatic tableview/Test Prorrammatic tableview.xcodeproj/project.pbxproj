@@ -19,7 +19,6 @@
 		466D3BFF27D9028400E8FCD0 /* Stub5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF827D9028400E8FCD0 /* Stub5ViewController.swift */; };
 		466D3C0027D9028400E8FCD0 /* Stub8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */; };
 		466D3C0127D9028400E8FCD0 /* Stub6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */; };
-		466D3C0227D9028400E8FCD0 /* Stub2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFB27D9028400E8FCD0 /* Stub2ViewController.swift */; };
 		466D3C0327D9028400E8FCD0 /* Stub3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFC27D9028400E8FCD0 /* Stub3ViewController.swift */; };
 		46DD7B1827D63CB70053E88F /* SimpleStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B1727D63CB70053E88F /* SimpleStartViewController.swift */; };
 		46DD7B1B27D6708A0053E88F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B1A27D6708A0053E88F /* UIView+Ext.swift */; };
@@ -44,7 +43,6 @@
 		466D3BF827D9028400E8FCD0 /* Stub5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub5ViewController.swift; sourceTree = "<group>"; };
 		466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub8ViewController.swift; sourceTree = "<group>"; };
 		466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub6ViewController.swift; sourceTree = "<group>"; };
-		466D3BFB27D9028400E8FCD0 /* Stub2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub2ViewController.swift; sourceTree = "<group>"; };
 		466D3BFC27D9028400E8FCD0 /* Stub3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub3ViewController.swift; sourceTree = "<group>"; };
 		46DD7B1727D63CB70053E88F /* SimpleStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleStartViewController.swift; sourceTree = "<group>"; };
 		46DD7B1A27D6708A0053E88F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 		466D3BF327D900E200E8FCD0 /* ViewControllers Available */ = {
 			isa = PBXGroup;
 			children = (
-				466D3BFB27D9028400E8FCD0 /* Stub2ViewController.swift */,
 				466D3BFC27D9028400E8FCD0 /* Stub3ViewController.swift */,
 				466D3BF627D9028400E8FCD0 /* Stub4ViewController.swift */,
 				466D3BF827D9028400E8FCD0 /* Stub5ViewController.swift */,
@@ -223,7 +220,6 @@
 				466BD8DB27D4E9980030577A /* AppDelegate.swift in Sources */,
 				46DD7B1B27D6708A0053E88F /* UIView+Ext.swift in Sources */,
 				46DD7B2727D79BBE0053E88F /* StartViewController.swift in Sources */,
-				466D3C0227D9028400E8FCD0 /* Stub2ViewController.swift in Sources */,
 				46DD7B1827D63CB70053E88F /* SimpleStartViewController.swift in Sources */,
 				466D3C0027D9028400E8FCD0 /* Stub8ViewController.swift in Sources */,
 				46DD7B1D27D6736D0053E88F /* TestViewController.swift in Sources */,

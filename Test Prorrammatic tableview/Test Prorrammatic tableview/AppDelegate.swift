@@ -18,28 +18,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.rootViewController = MenuButtonViewController()
 
+        //      createTabBar()
+
         
 //        Programmatic Table View Controller
 //        window?.rootViewController = TableViewController()
 
 //        Just starts a ViewController with label and a  bunch of buttons
 //        window?.rootViewController = SimpleStartViewController()
-        window?.makeKeyAndVisible()
+        
+      
+      window?.makeKeyAndVisible()
         return true
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-    }
 
-    func applicationDidEnterBackground(_ application: UIApplication) {
-    }
+  func createTabBar()  {
+    
+    let vc1 = UIViewController()
+    vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
+    vc1.title = "Contacts"
+    let nc1 = UINavigationController(rootViewController: vc1)
+    
+    let vc2 = UIViewController()
+    vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+    vc2.title = "Favorites"
+    let nc2 = UINavigationController(rootViewController: vc2)
 
-    func applicationWillEnterForeground(_ application: UIApplication) {
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-    }
-
+    let vc3 = UIViewController()
+    vc3.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 2)
+    vc3.title = "MostViewed"
+    let nc3 = UINavigationController(rootViewController: vc3)
+    
+    let tabVC = UITabBarController()
+    tabVC.viewControllers = [nc1, nc2, nc3]
+    
+    window?.rootViewController = tabVC
+  }
 
 }
 
