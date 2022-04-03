@@ -13,20 +13,7 @@ import UIKit
 
 final class MenuButtonViewController: UIViewController {
     
-    var menuItems: [UIAction] {
-        return [
-            UIAction(title: "Standard item", image: UIImage(systemName: "sun.max"), handler: { (action) in
-                print(action.title)}),
-            UIAction(title: "Disabled item", image: UIImage(systemName: "moon"), attributes: .disabled, handler: { (_) in
-            }),
-            UIAction(title: "Delete..", image: UIImage(systemName: "trash"), attributes: .destructive, handler: { (_) in
-            })
-        ]
-    }
 
-    var demoMenu: UIMenu {
-        return UIMenu(title: "My menu", image: nil, identifier: nil, options: [], children: menuItems)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,30 +28,44 @@ final class MenuButtonViewController: UIViewController {
             print(action.title)
         }
         )
-        
+
+      
         // 2. create a label
-        let label: UILabel = {
-            let label = UILabel()
-            label.translatesAutoresizingMaskIntoConstraints = false
-            label.textAlignment = .center
-            label.font = UIFont.preferredFont(forTextStyle: .body)
-            label.adjustsFontForContentSizeCategory = true
-            label.numberOfLines = 0
-            label.text = "Something to say"
-            return label
-        }()
-        
+      let label: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.font = UIFont.preferredFont(forTextStyle: .body)
+        label.adjustsFontForContentSizeCategory = true
+        label.numberOfLines = 0
+        label.text = "Something to say"
+        return label
+      }()
+      
         // 3. create a second buttton
-        let button2 = UIButton(configuration: UIButton.Configuration.filled())
-        button2.setTitle("This is for the button", for: .normal)
-        
-        
-       
-        button2.menu = demoMenu
-        button2.showsMenuAsPrimaryAction = true
-       
-        
-        
+      let button2 = UIButton(configuration: UIButton.Configuration.filled())
+      button2.setTitle("This is for the button", for: .normal)
+      
+      var menuItems: [UIAction] {
+        return [
+          UIAction(title: "Standard item", image: UIImage(systemName: "sun.max"), handler: { (action) in
+            print(action.title)}),
+          UIAction(title: "Disabled item", image: UIImage(systemName: "moon"), attributes: .disabled, handler: { (_) in
+          }),
+          UIAction(title: "Delete..", image: UIImage(systemName: "trash"), attributes: .destructive, handler: { (_) in
+          })
+        ]
+      }
+      
+      var demoMenu: UIMenu {
+        return UIMenu(title: "My menu", image: nil, identifier: nil, options: [], children: menuItems)
+      }
+      
+      button2.menu = demoMenu
+      button2.showsMenuAsPrimaryAction = true
+      
+      
+      
             // 4. pass it to the stackView
         setupStackView(button1, label, button2)
         

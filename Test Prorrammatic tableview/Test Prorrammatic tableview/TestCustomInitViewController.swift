@@ -11,11 +11,18 @@
 
 import UIKit
 
-final class Stub3ViewController: UIViewController {
+final class TestCustomInitViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupView()
+    var initThis: String
+    
+    init(x: String) {
+        self.initThis = x
+        super.init(nibName: nil, bundle: nil)
+
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func setupView() {

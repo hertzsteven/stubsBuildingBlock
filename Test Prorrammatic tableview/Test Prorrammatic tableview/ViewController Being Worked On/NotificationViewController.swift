@@ -11,13 +11,23 @@
 
 import UIKit
 
-final class Stub1ViewController: UIViewController {
-    
+final class NotificationViewController: UIViewController {
+    let logoutButton : UIBarButtonItem = {
+        let x = UIBarButtonItem(title: "logout", style: .plain, target: self, action: #selector(logoutTapped))
+        return x
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = logoutButton
+        
         setupView()
     }
-    
+    @objc func logoutTapped() {
+        print("logout tapped")
+    }
+
     private func setupView() {
         
         // 1. create a button
@@ -36,6 +46,7 @@ final class Stub1ViewController: UIViewController {
             label.adjustsFontForContentSizeCategory = true
             label.numberOfLines = 0
             label.text = "Something to say"
+            label.tintColor = .label
             return label
         }()
         
@@ -43,6 +54,8 @@ final class Stub1ViewController: UIViewController {
         let button2 = UIButton(configuration: UIButton.Configuration.filled(),
                                primaryAction: UIAction(title: "Hello From The second one") { action in
             print(action.title)
+            NotificationCenter.default.post(name: Notification.Name("buttonClicked"), object: nil, userInfo: nil)
+            
         }
         )
         
