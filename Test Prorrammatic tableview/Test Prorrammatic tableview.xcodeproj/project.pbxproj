@@ -20,6 +20,7 @@
 		466D3C0027D9028400E8FCD0 /* Stub8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */; };
 		466D3C0127D9028400E8FCD0 /* Stub6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */; };
 		466D3C0327D9028400E8FCD0 /* TableViewControllerCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFC27D9028400E8FCD0 /* TableViewControllerCustomHeader.swift */; };
+		46C9FDFF27FA05C90077B236 /* Notification+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C9FDFE27FA05C90077B236 /* Notification+Ext.swift */; };
 		46DD7B1827D63CB70053E88F /* SimpleStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B1727D63CB70053E88F /* SimpleStartViewController.swift */; };
 		46DD7B1B27D6708A0053E88F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B1A27D6708A0053E88F /* UIView+Ext.swift */; };
 		46DD7B1D27D6736D0053E88F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7B1C27D6736D0053E88F /* TestViewController.swift */; };
@@ -44,6 +45,7 @@
 		466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub8ViewController.swift; sourceTree = "<group>"; };
 		466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub6ViewController.swift; sourceTree = "<group>"; };
 		466D3BFC27D9028400E8FCD0 /* TableViewControllerCustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerCustomHeader.swift; sourceTree = "<group>"; };
+		46C9FDFE27FA05C90077B236 /* Notification+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Ext.swift"; sourceTree = "<group>"; };
 		46DD7B1727D63CB70053E88F /* SimpleStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleStartViewController.swift; sourceTree = "<group>"; };
 		46DD7B1A27D6708A0053E88F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		46DD7B1C27D6736D0053E88F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				46DD7B2027D6B9B40053E88F /* TableViewCell.swift */,
 				46DD7B2427D6ECE80053E88F /* TableViewCellIndexClosure.swift */,
 				46DD7B1A27D6708A0053E88F /* UIView+Ext.swift */,
+				46C9FDFE27FA05C90077B236 /* Notification+Ext.swift */,
 				46DD7B1927D66DF50053E88F /* files */,
 			);
 			path = "Test Prorrammatic tableview";
@@ -213,6 +216,7 @@
 			files = (
 				466BD8DD27D4E9980030577A /* TableViewController.swift in Sources */,
 				466D3BFF27D9028400E8FCD0 /* Stub5ViewController.swift in Sources */,
+				46C9FDFF27FA05C90077B236 /* Notification+Ext.swift in Sources */,
 				466D3C0127D9028400E8FCD0 /* Stub6ViewController.swift in Sources */,
 				466D3BF527D9013500E8FCD0 /* TestCustomInitViewController.swift in Sources */,
 				46DD7B2327D6EBB80053E88F /* TableViewControllerProtocolClosure.swift in Sources */,

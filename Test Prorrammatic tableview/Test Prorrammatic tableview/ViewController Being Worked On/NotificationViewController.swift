@@ -54,7 +54,7 @@ final class NotificationViewController: UIViewController {
         let button2 = UIButton(configuration: UIButton.Configuration.filled(),
                                primaryAction: UIAction(title: "Hello From The second one") { action in
             print(action.title)
-            NotificationCenter.default.post(name: Notification.Name("buttonClicked"), object: nil, userInfo: nil)
+            NotificationCenter.default.post(name: NotificationName.buttonTapped.rawValue, object: nil, userInfo: nil)
             
         }
         )
@@ -85,3 +85,4 @@ final class NotificationViewController: UIViewController {
     }
 
 }
+

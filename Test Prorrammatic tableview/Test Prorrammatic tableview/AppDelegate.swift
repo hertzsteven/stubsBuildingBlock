@@ -69,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
 //    Use for Notification Observing
     func observeNotification()  {
-        let nameOfNotification = Notification.Name("buttonClicked")
+        let nameOfNotification = Notification.Name.buttonTapped
         NotificationCenter.default.addObserver(self, selector: #selector(justGotButtonClickedMessage(notificatio:)), name: nameOfNotification, object: nil)
     }
     
