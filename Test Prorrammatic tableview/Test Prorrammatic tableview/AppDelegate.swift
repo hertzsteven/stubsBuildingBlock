@@ -23,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       let notificationViewController = NotificationViewController()
       notificationViewController.title = "Hello"
       
-      let navigationController = UINavigationController(rootViewController: notificationViewController)
+//      let navigationController = UINavigationController(rootViewController: notificationViewController)
       
-      window?.rootViewController = navigationController
+      window?.rootViewController = TextFieldPwdShowHideViewController()
     
       //        createTabBar()
     

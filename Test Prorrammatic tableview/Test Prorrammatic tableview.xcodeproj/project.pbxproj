@@ -16,7 +16,7 @@
 		466D3BF527D9013500E8FCD0 /* TestCustomInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF427D9013500E8FCD0 /* TestCustomInitViewController.swift */; };
 		466D3BFD27D9028400E8FCD0 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF627D9028400E8FCD0 /* NotificationViewController.swift */; };
 		466D3BFE27D9028400E8FCD0 /* Stub7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF727D9028400E8FCD0 /* Stub7ViewController.swift */; };
-		466D3BFF27D9028400E8FCD0 /* Stub5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF827D9028400E8FCD0 /* Stub5ViewController.swift */; };
+		466D3BFF27D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF827D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift */; };
 		466D3C0027D9028400E8FCD0 /* Stub8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */; };
 		466D3C0127D9028400E8FCD0 /* Stub6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */; };
 		466D3C0327D9028400E8FCD0 /* TableViewControllerCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFC27D9028400E8FCD0 /* TableViewControllerCustomHeader.swift */; };
@@ -41,7 +41,7 @@
 		466D3BF427D9013500E8FCD0 /* TestCustomInitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCustomInitViewController.swift; sourceTree = "<group>"; };
 		466D3BF627D9028400E8FCD0 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		466D3BF727D9028400E8FCD0 /* Stub7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub7ViewController.swift; sourceTree = "<group>"; };
-		466D3BF827D9028400E8FCD0 /* Stub5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub5ViewController.swift; sourceTree = "<group>"; };
+		466D3BF827D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldPwdShowHideViewController.swift; sourceTree = "<group>"; };
 		466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub8ViewController.swift; sourceTree = "<group>"; };
 		466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub6ViewController.swift; sourceTree = "<group>"; };
 		466D3BFC27D9028400E8FCD0 /* TableViewControllerCustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerCustomHeader.swift; sourceTree = "<group>"; };
@@ -102,7 +102,6 @@
 		466D3BF327D900E200E8FCD0 /* ViewControllers Available */ = {
 			isa = PBXGroup;
 			children = (
-				466D3BF827D9028400E8FCD0 /* Stub5ViewController.swift */,
 				466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */,
 				466D3BF727D9028400E8FCD0 /* Stub7ViewController.swift */,
 				466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */,
@@ -113,7 +112,7 @@
 		466D3C0427D9031500E8FCD0 /* ViewController Being Worked On */ = {
 			isa = PBXGroup;
 			children = (
-				466D3BF627D9028400E8FCD0 /* NotificationViewController.swift */,
+				466D3BF827D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift */,
 			);
 			path = "ViewController Being Worked On";
 			sourceTree = "<group>";
@@ -132,6 +131,7 @@
 		46DD7B1F27D6B93E0053E88F /* ViewControllers Used */ = {
 			isa = PBXGroup;
 			children = (
+				466D3BF627D9028400E8FCD0 /* NotificationViewController.swift */,
 				466D3BFC27D9028400E8FCD0 /* TableViewControllerCustomHeader.swift */,
 				466D3BF427D9013500E8FCD0 /* TestCustomInitViewController.swift */,
 				46DD7B2627D79BBD0053E88F /* StartViewController.swift */,
@@ -215,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				466BD8DD27D4E9980030577A /* TableViewController.swift in Sources */,
-				466D3BFF27D9028400E8FCD0 /* Stub5ViewController.swift in Sources */,
+				466D3BFF27D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift in Sources */,
 				46C9FDFF27FA05C90077B236 /* Notification+Ext.swift in Sources */,
 				466D3C0127D9028400E8FCD0 /* Stub6ViewController.swift in Sources */,
 				466D3BF527D9013500E8FCD0 /* TestCustomInitViewController.swift in Sources */,

@@ -11,7 +11,8 @@
 
 import UIKit
 
-final class Stub5ViewController: UIViewController {
+final class TextFieldPwdShowHideViewController: UIViewController {
+    var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +47,57 @@ final class Stub5ViewController: UIViewController {
         }
         )
         
+        // lets create a textField
+        textField = {
+            let te = UITextField()
+            te.translatesAutoresizingMaskIntoConstraints = false
+            te.text = "hello"
+            te.isSecureTextEntry = true
+            te.textAlignment = .center
+           
+            let button  = enablePasswordToggle()
+            
+                // put the button on the uitextField
+            te.rightView = button
+            te.rightViewMode = .always
+            button.alpha = 0.7
+
+            return te
+        }()
+        
+        
+        
+        
         // 4. pass it to the stackView
-        setupStackView(button1, label, button2)
+        setupStackView(button1, label, button2, textField)
         
     }
+    
+    func enablePasswordToggle() -> UIButton{
+
+        let button = UIButton(type: .custom)
+        // set the image on the button
+        button.setImage(UIImage(systemName: "pencil.circle" ), for: .normal)
+        button.setImage(UIImage(systemName: "pencil.circle.fill"), for: .selected)
+        
+         // where to place the image on the button
+         button.imageEdgeInsets = UIEdgeInsets(top:0, left:-12, bottom:0, right:0)
+        
+      
+         // what the button should do when pressed
+         button.addTarget(self,
+                            action: #selector(togglePasswordView),
+                            for: .touchUpInside)
+        return button
+        
+    }
+    
+    @objc func togglePasswordView(button: UIButton)  {
+        print("executing")
+        button.isSelected.toggle()
+        textField.isSecureTextEntry.toggle()
+    }
+    
     
     // stackView gets created and get cofigured into the view
     fileprivate func setupStackView(_ views: UIView...) {
