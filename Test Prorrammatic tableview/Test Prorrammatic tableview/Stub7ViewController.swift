@@ -11,10 +11,34 @@
 
 import UIKit
 
+extension String {
+    var putaS: Self {
+        self.appending("-S-")
+    }
+    
+    func putS() -> Self {
+        self.appending("-S-")
+    }
+    func putT() -> Self {
+        self.appending("-T-")
+    }
+    func putU() -> Self {
+        self.appending("-U-")
+    }
+}
+
+
 final class Stub7ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var myStr = "XXX"
+            .putaS
+            .putU()
+            .putT()
+            .putS()
+        myStr.putS().putT().putU()
+        print(myStr.putS().putT().putU())
         setupView()
     }
     

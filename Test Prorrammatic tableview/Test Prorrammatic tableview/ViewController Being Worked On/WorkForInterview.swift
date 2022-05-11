@@ -11,11 +11,27 @@
 
 import UIKit
 
-final class Stub8ViewController: UIViewController {
+final class WorkForInterview: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("in review for interview")
+        getMockData()
         setupView()
+    }
+    
+    func getMockData()  {
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/todos/1") else {fatalError("did not work")}
+        let dataTask = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard error == nil else {fatalError("error not nil")}
+            guard let data = data else {
+                fatalError("getting the data")
+            }
+            print("in it", data)
+            let jsonString = String(data: data, encoding: .utf8)
+            print(jsonString)
+        }
+        dataTask.resume()
     }
     
     private func setupView() {

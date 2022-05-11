@@ -20,12 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       observeNotification()
 //    window?.rootViewController = TableViewControllerCustomHeader()
 //      window?.rootViewController = TestCustomInitViewController(x: "kkkk")
-      let notificationViewController = NotificationViewController()
-      notificationViewController.title = "Hello"
+
+//      let notificationViewController = NotificationViewController()
+//      notificationViewController.title = "Hello"
       
 //      let navigationController = UINavigationController(rootViewController: notificationViewController)
       
-      window?.rootViewController = TextFieldPwdShowHideViewController()
+      window?.rootViewController = WorkForInterview()
     
       //        createTabBar()
     
@@ -69,8 +70,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
 //    Use for Notification Observing
     func observeNotification()  {
-        let nameOfNotification = Notification.Name.buttonTapped
+        let nameOfNotification = NotificationName.buttonTapped.rawValue
         NotificationCenter.default.addObserver(self, selector: #selector(justGotButtonClickedMessage(notificatio:)), name: nameOfNotification, object: nil)
+//        NotificationCenter.default.addObserver(forName: nameOfNotification, object: nil, queue: .main) { notification in
+//            print("hello")
+//            print(notification.name)
+//        }
     }
     
     @objc func justGotButtonClickedMessage(notificatio: Notification)  {

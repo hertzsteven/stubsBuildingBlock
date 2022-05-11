@@ -25,6 +25,7 @@ final class TextFieldPwdShowHideViewController: UIViewController {
         let button1 = UIButton(configuration: UIButton.Configuration.filled(),
                                primaryAction: UIAction(title: "Hello From One") { action in
             print(action.title)
+            self.shakeButton()
         }
         )
         
@@ -117,6 +118,17 @@ final class TextFieldPwdShowHideViewController: UIViewController {
 
         view.addSubview(stackView)
         stackView.centerOfsuperView() // using my helper extension on UIView
+    }
+    
+    private func shakeButton() {
+        let animation = CAKeyframeAnimation()
+        animation.keyPath = "position.x"
+        animation.values = [0, 10, -10, 10, 0]
+        animation.keyTimes = [0, 0.16, 0.5, 0.83, 1]
+        animation.duration = 0.4
+
+        animation.isAdditive = true
+        textField.layer.add(animation, forKey: "shake")
     }
 
 }

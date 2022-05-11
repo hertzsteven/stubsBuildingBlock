@@ -17,7 +17,7 @@
 		466D3BFD27D9028400E8FCD0 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF627D9028400E8FCD0 /* NotificationViewController.swift */; };
 		466D3BFE27D9028400E8FCD0 /* Stub7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF727D9028400E8FCD0 /* Stub7ViewController.swift */; };
 		466D3BFF27D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF827D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift */; };
-		466D3C0027D9028400E8FCD0 /* Stub8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */; };
+		466D3C0027D9028400E8FCD0 /* WorkForInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BF927D9028400E8FCD0 /* WorkForInterview.swift */; };
 		466D3C0127D9028400E8FCD0 /* Stub6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */; };
 		466D3C0327D9028400E8FCD0 /* TableViewControllerCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D3BFC27D9028400E8FCD0 /* TableViewControllerCustomHeader.swift */; };
 		46C9FDFF27FA05C90077B236 /* Notification+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C9FDFE27FA05C90077B236 /* Notification+Ext.swift */; };
@@ -42,7 +42,7 @@
 		466D3BF627D9028400E8FCD0 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		466D3BF727D9028400E8FCD0 /* Stub7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub7ViewController.swift; sourceTree = "<group>"; };
 		466D3BF827D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldPwdShowHideViewController.swift; sourceTree = "<group>"; };
-		466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub8ViewController.swift; sourceTree = "<group>"; };
+		466D3BF927D9028400E8FCD0 /* WorkForInterview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkForInterview.swift; sourceTree = "<group>"; };
 		466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub6ViewController.swift; sourceTree = "<group>"; };
 		466D3BFC27D9028400E8FCD0 /* TableViewControllerCustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerCustomHeader.swift; sourceTree = "<group>"; };
 		46C9FDFE27FA05C90077B236 /* Notification+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Ext.swift"; sourceTree = "<group>"; };
@@ -104,7 +104,6 @@
 			children = (
 				466D3BFA27D9028400E8FCD0 /* Stub6ViewController.swift */,
 				466D3BF727D9028400E8FCD0 /* Stub7ViewController.swift */,
-				466D3BF927D9028400E8FCD0 /* Stub8ViewController.swift */,
 			);
 			name = "ViewControllers Available";
 			sourceTree = "<group>";
@@ -112,6 +111,7 @@
 		466D3C0427D9031500E8FCD0 /* ViewController Being Worked On */ = {
 			isa = PBXGroup;
 			children = (
+				466D3BF927D9028400E8FCD0 /* WorkForInterview.swift */,
 				466D3BF827D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift */,
 			);
 			path = "ViewController Being Worked On";
@@ -225,7 +225,7 @@
 				46DD7B1B27D6708A0053E88F /* UIView+Ext.swift in Sources */,
 				46DD7B2727D79BBE0053E88F /* StartViewController.swift in Sources */,
 				46DD7B1827D63CB70053E88F /* SimpleStartViewController.swift in Sources */,
-				466D3C0027D9028400E8FCD0 /* Stub8ViewController.swift in Sources */,
+				466D3C0027D9028400E8FCD0 /* WorkForInterview.swift in Sources */,
 				46DD7B1D27D6736D0053E88F /* TestViewController.swift in Sources */,
 				4614F23127D81DDA00B6CCBC /* MenuButtonViewController.swift in Sources */,
 				466D3BFE27D9028400E8FCD0 /* Stub7ViewController.swift in Sources */,

@@ -1,6 +1,6 @@
 import Cocoa
 
-    import  AppKit
+import  AppKit
 
 struct StatusColor: Equatable, ExpressibleByStringLiteral {
     
