@@ -23,7 +23,7 @@
 		46A43A8F282C710100E47BD0 /* InterviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A43A8E282C710100E47BD0 /* InterviewTableViewCell.swift */; };
 		46A43B14283528A900E47BD0 /* Stub14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A43B0F283528A900E47BD0 /* Stub14ViewController.swift */; };
 		46A43B15283528A900E47BD0 /* Stub12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A43B10283528A900E47BD0 /* Stub12ViewController.swift */; };
-		46A43B16283528A900E47BD0 /* Stub10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A43B11283528A900E47BD0 /* Stub10ViewController.swift */; };
+		46A43B16283528A900E47BD0 /* AnimationAndButtonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A43B11283528A900E47BD0 /* AnimationAndButtonsVC.swift */; };
 		46A43B17283528A900E47BD0 /* Stub11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A43B12283528A900E47BD0 /* Stub11ViewController.swift */; };
 		46A43B18283528A900E47BD0 /* Stub13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A43B13283528A900E47BD0 /* Stub13ViewController.swift */; };
 		46C9FDFF27FA05C90077B236 /* Notification+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C9FDFE27FA05C90077B236 /* Notification+Ext.swift */; };
@@ -54,8 +54,8 @@
 		46A43A8E282C710100E47BD0 /* InterviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewTableViewCell.swift; sourceTree = "<group>"; };
 		46A43B0F283528A900E47BD0 /* Stub14ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stub14ViewController.swift; path = "Test Prorrammatic tableview/Stub14ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		46A43B10283528A900E47BD0 /* Stub12ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stub12ViewController.swift; path = "Test Prorrammatic tableview/Stub12ViewController.swift"; sourceTree = SOURCE_ROOT; };
-		46A43B11283528A900E47BD0 /* Stub10ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stub10ViewController.swift; path = "Test Prorrammatic tableview/Stub10ViewController.swift"; sourceTree = SOURCE_ROOT; };
-		46A43B12283528A900E47BD0 /* Stub11ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stub11ViewController.swift; path = "Test Prorrammatic tableview/Stub11ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		46A43B11283528A900E47BD0 /* AnimationAndButtonsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationAndButtonsVC.swift; path = "Test Prorrammatic tableview/AnimationAndButtonsVC.swift"; sourceTree = SOURCE_ROOT; };
+		46A43B12283528A900E47BD0 /* Stub11ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stub11ViewController.swift; path = "Test Prorrammatic tableview/ViewController Being Worked On/Stub11ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		46A43B13283528A900E47BD0 /* Stub13ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stub13ViewController.swift; path = "Test Prorrammatic tableview/Stub13ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		46C9FDFE27FA05C90077B236 /* Notification+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Ext.swift"; sourceTree = "<group>"; };
 		46DD7B1727D63CB70053E88F /* SimpleStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleStartViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +115,6 @@
 		466D3BF327D900E200E8FCD0 /* ViewControllers Available */ = {
 			isa = PBXGroup;
 			children = (
-				46A43B12283528A900E47BD0 /* Stub11ViewController.swift */,
 				46A43B10283528A900E47BD0 /* Stub12ViewController.swift */,
 				46A43B13283528A900E47BD0 /* Stub13ViewController.swift */,
 				46A43B0F283528A900E47BD0 /* Stub14ViewController.swift */,
@@ -128,8 +127,7 @@
 		466D3C0427D9031500E8FCD0 /* ViewController Being Worked On */ = {
 			isa = PBXGroup;
 			children = (
-				46A43B11283528A900E47BD0 /* Stub10ViewController.swift */,
-				466D3BF927D9028400E8FCD0 /* WorkForInterview.swift */,
+				46A43B12283528A900E47BD0 /* Stub11ViewController.swift */,
 				466D3BF827D9028400E8FCD0 /* TextFieldPwdShowHideViewController.swift */,
 			);
 			path = "ViewController Being Worked On";
@@ -149,6 +147,8 @@
 		46DD7B1F27D6B93E0053E88F /* ViewControllers Used */ = {
 			isa = PBXGroup;
 			children = (
+				466D3BF927D9028400E8FCD0 /* WorkForInterview.swift */,
+				46A43B11283528A900E47BD0 /* AnimationAndButtonsVC.swift */,
 				466D3BF627D9028400E8FCD0 /* NotificationViewController.swift */,
 				466D3BFC27D9028400E8FCD0 /* TableViewControllerCustomHeader.swift */,
 				466D3BF427D9013500E8FCD0 /* TestCustomInitViewController.swift */,
@@ -240,7 +240,7 @@
 				466D3BF527D9013500E8FCD0 /* TestCustomInitViewController.swift in Sources */,
 				46A43B14283528A900E47BD0 /* Stub14ViewController.swift in Sources */,
 				46DD7B2327D6EBB80053E88F /* TableViewControllerProtocolClosure.swift in Sources */,
-				46A43B16283528A900E47BD0 /* Stub10ViewController.swift in Sources */,
+				46A43B16283528A900E47BD0 /* AnimationAndButtonsVC.swift in Sources */,
 				46DD7B2527D6ECE80053E88F /* TableViewCellIndexClosure.swift in Sources */,
 				466BD8DB27D4E9980030577A /* AppDelegate.swift in Sources */,
 				46DD7B1B27D6708A0053E88F /* UIView+Ext.swift in Sources */,
