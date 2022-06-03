@@ -11,22 +11,6 @@
 
 import UIKit
 
-//extension String {
-//    var putaS: Self {
-//        self.appending("-S-")
-//    }
-//    
-//    func putS() -> Self {
-//        self.appending("-S-")
-//    }
-//    func putT() -> Self {
-//        self.appending("-T-")
-//    }
-//    func putU() -> Self {
-//        self.appending("-U-")
-//    }
-//}
-
 
 final class Stub12ViewController: UIViewController {
     

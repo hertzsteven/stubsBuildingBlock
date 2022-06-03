@@ -30,15 +30,65 @@ struct Post: Codable {
   let urls: PostUrls
 }
 
-fileprivate struct APIResponse: Codable {
-  let results: [Post]
+ struct APIResponse: Codable {
+  let results: [Post]?
 }
 
-final class Stub11ViewController: UIViewController {
+final class Stub11ViewController: UIViewController, UITableViewDataSource {
     
+    let tableView = UITableView()
+    let items = ["one",
+                 "two",
+                 "three",
+                 "four",
+                 "five",
+                 "six",
+                 "seven",
+                 "eight",
+                 "nine",
+                 "ten"
+    ]
+    
+    let networker = NetworkManager.shared
+    
+    var apiResponse = APIResponse(results: [])
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableViewSetup()
+        getTheData()
         
+        
+ 
+//        setupView()
+    }
+    
+    fileprivate func tableViewSetup() {
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        
+        
+        view.addSubview(tableView)
+        
+//        tableView.sizeAsPctOfsuperViewAndCenter(pctOfSuperView: 0.5)
+        
+        tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+//            tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+//
+
+    }
+    
+    fileprivate func getTheData() {
+        
+        print(" in \(#function) at line \(#line)")
+    
         let accessKey = "bbc33cc9f86e189e1387e31a57dbd74a2dba4a5f4540f7a0dbcb599fd72f61f2"
         
         guard let theURL = URL(string: "https://api.unsplash.com/search/photos?query=puppies") else {
@@ -48,27 +98,43 @@ final class Stub11ViewController: UIViewController {
         var req = URLRequest(url: theURL)
         req.addValue("Client-ID \(accessKey)", forHTTPHeaderField: "Authorization")
 
-        let task = URLSession.shared.dataTask(with: req) { data, response, error in
+        let task = URLSession.shared.dataTask(with: req) {  data, response, error in
+            
+            if error != nil {
+                print("there was an error")
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
+                print(response)
+              return
+            }
+
+            
             guard let data = data else {
                 fatalError("data not retreived")
             }
             print(String(decoding: data, as: UTF8.self))
-            // do the decoding from here
-            
+             //do the decoding from here
+            print(" in \(#function) at line \(#line)")
             do {
-                let response = try JSONDecoder().decode(APIResponse.self, from: data)
-                response.results.forEach {
-                    print($0.description)
+                let xxxx = try JSONDecoder().decode(APIResponse.self, from: data)
+                self.apiResponse = xxxx
+//                print(" in \(#function) at line \(#line)")
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
                 }
+//                self.apiResponse.results.forEach {
+//                    print($0.description as Any)
+//
+//                }
             } catch let error {
-                print("error decoding the response")
+                print("error decoding the response \(error)")
             }
             
         }
         task.resume()
         
-        
-//        setupView()
     }
     
     private func setupView() {
@@ -125,3 +191,51 @@ final class Stub11ViewController: UIViewController {
     }
 
 }
+
+    //
+    extension Stub11ViewController  {
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let ip = indexPath
+            print(" in \(#function) at line \(#line)")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+            guard let post = apiResponse.results?[indexPath.row] else {fatalError("sorry charlie")}
+
+            
+            print(post.description ?? "no description")
+            cell.textLabel?.text = post.description
+            
+            
+            func image(data: Data?) -> UIImage? {
+              if let data = data {
+                return UIImage(data: data)
+              }
+              return UIImage(systemName: "picture")
+            }
+            
+            print("before network image")
+            networker.image(post: post) { data, error  in
+              let img = image(data: data)
+              DispatchQueue.main.async {
+                  print("in dispatch que")
+//                  let image = UIImage(systemName: "pencil.slash")
+//                  cell.imageView?.image = image
+
+               // if (cell.representedIdentifier == representedIdentifier) {
+                  cell.imageView?.image = img
+//                  cell.layoutIfNeeded()
+                  cell.layoutSubviews()
+               // }
+              }
+            }
+
+
+            return cell
+        }
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            apiResponse.results?.count ?? 0
+        }
+    }
+
+

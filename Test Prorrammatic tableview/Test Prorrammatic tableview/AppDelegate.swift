@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       let nc = UINavigationController(rootViewController: workForInterview)
        */
       
-      window?.rootViewController = Stub11ViewController()
+      window?.rootViewController = MyDiffDataSource()
     
       //        createTabBar()
     
